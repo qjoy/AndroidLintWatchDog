@@ -9,5 +9,6 @@
     检查工程所有Activity是否继承自LFBaseActivity或者LFBaseAppCompatActivity
 5.  ViewIdNameDetector
     检查layout文件中的id是否符合《Android-Code-Style》中"布局文件中的id命名"这个部分的规定
-
+6.  ImageFileSizeDetector
+    检查图片文件尺寸是否超过某个限定的大小
 ##Warning类型错误

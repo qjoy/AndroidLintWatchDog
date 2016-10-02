@@ -60,7 +60,8 @@ Do these in AndroidStudio Terminal tab:
 ![example-cmd](http://7xox5k.com1.z0.glb.clouddn.com/AndrLintWatchDog_cmd.gif)	
 ![example-htmlreport](http://7xox5k.com1.z0.glb.clouddn.com/AndrLintWatchDog-htmlreport.png)
 			
-			
+## More Details about AndrLintWatchDog
+**[Detail-andrlintwatchdog](http://alexq.farbox.com/post/andrlintwatchdog-custom-lint-zi-ding-yi-lint-ti-gao-dai-ma-zhi-liang)**			
 ## Release History
 
 ## License
