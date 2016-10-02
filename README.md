@@ -56,9 +56,6 @@ Do these in AndroidStudio Terminal tab:
 		例:../gradlew lint
 	3.	BUILD SUCCESSFUL,now here is a html file be maked.open it,read it.
 		例:Wrote HTML report to file:///省去了无用的路径/app/build/outputs/lint-results-debug.html
-
-![example-cmd](http://7xox5k.com1.z0.glb.clouddn.com/AndrLintWatchDog_cmd.gif)	
-![example-htmlreport](http://7xox5k.com1.z0.glb.clouddn.com/AndrLintWatchDog-htmlreport.png)
 			
 ## More Details about AndrLintWatchDog
 **[Detail-andrlintwatchdog](http://alexq.farbox.com/post/andrlintwatchdog-custom-lint-zi-ding-yi-lint-ti-gao-dai-ma-zhi-liang)**			
