@@ -9,7 +9,7 @@ AndrLintWatchDog
 **AndrLintWatchDog is a collection of some typical Custom-Lint-Check sample. some of them can be used directly, others you can make a little modification to adapt to your project.**
 
 ##Features
-- [x] 	ImageFileSizeDetector&nbsp;:&nbsp;java代码中的中文硬编码;
+- [x] 	ImageFileSizeDetector&nbsp;:&nbsp;检查图片文件尺寸是否超过某个限定的大小;
 - [x]	LoggerUsageDetector&nbsp;:&nbsp;使用android.util.Log任何方法;
 - [x]	FastJsonDetector&nbsp;:	&nbsp;检查fastJson格式化类对象是否实现了Serializable或者Parcelable;
 - [x]	BaseActivityDetector&nbsp;:&nbsp;检查工程所有Activity是否继承自LFBaseActivity或者LFBaseAppCompatActivity;
