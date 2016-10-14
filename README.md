@@ -1,4 +1,4 @@
-AndrLintWatchDog
+AndroidLintWatchDog
 =================
 **by QJoy （[email](alexq_andr@163.com) alexq_andr@163.com）**
 
@@ -6,7 +6,7 @@ AndrLintWatchDog
 ![license-bsd](https://img.shields.io/badge/license-BSD-red.svg)&nbsp;
 ![author-qjoy](https://img.shields.io/badge/author-QJoy-orange.svg)&nbsp;
 
-**AndrLintWatchDog is a collection of some typical Custom-Lint-Check sample. some of them can be used directly, others you can make a little modification to adapt to your project.**
+**AndroidLintWatchDog is a collection of some typical Android-Custom-Lint-Check sample. some of them can be used directly, others you can make a little modification to adapt to your project.**
 
 ##Features
 - [x] 	ImageFileSizeDetector&nbsp;:&nbsp;检查图片文件尺寸是否超过某个限定的大小;
@@ -47,7 +47,7 @@ android {
 }
 ```			
 		
-## Use AndrLintWatchDog
+## Use AndroidLintWatchDog
 Do these in AndroidStudio Terminal tab:
 
 	1.	"cd" to the module that you want check your lint-rules;
@@ -57,9 +57,9 @@ Do these in AndroidStudio Terminal tab:
 	3.	BUILD SUCCESSFUL,now here is a html file be maked.open it,read it.
 		例:Wrote HTML report to file:///省去了无用的路径/app/build/outputs/lint-results-debug.html
 			
-## More Details about AndrLintWatchDog
-**[Detail-andrlintwatchdog](http://alexq.farbox.com/post/andrlintwatchdog-custom-lint-zi-ding-yi-lint-ti-gao-dai-ma-zhi-liang)**			
+## More Details about AndroidLintWatchDog
+**[Detail-androidlintwatchdog](http://alexq.farbox.com/post/andrlintwatchdog-custom-lint-zi-ding-yi-lint-ti-gao-dai-ma-zhi-liang)**			
 ## Release History
 
 ## License
- **AndrLintWatchDog is released under the BSD license. See LICENSE for details.**
+ **AndroidLintWatchDog is released under the BSD license. See LICENSE for details.**
