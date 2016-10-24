@@ -40,12 +40,18 @@ public class MainActivity extends LintCheckRightAppAcompatActivity {
 		Log.d(TAG, "test");
 	}
 
-	@SuppressLint("QjoyJavaChineseString")
-	private void JsonTest(){
-		PeopleInfo info = FastJsonTools.deserialize("{\"name\":\"Alex\",\"school\":\"Beira\",\"birthday\":\"1985年3月xx日\"}"
-          , PeopleInfo.class);
-		MyLog.d(TAG, info.name);
-	}
+//	@SuppressLint("QjoyJavaChineseString")
+//	private void JsonTest(){
+//		PeopleInfo info = FastJsonTools.deserialize("{\"name\":\"Alex\",\"school\":\"Beira\",\"birthday\":\"1985年3月xx日\"}"
+//				, PeopleInfo.class);
+//		MyLog.d(TAG, info.name);
+//	}
+
+//	private void JsonTestOrg(){
+//		PeopleInfo info = JSON.parseObject("{\"name\":\"Alex\",\"school\":\"Beira\",\"birthday\":\"1985年3月xx日\"}"
+//				, PeopleInfo.class);
+//		MyLog.d(TAG, info.name);
+//	}
 
 	@SuppressLint("QjoyJavaChineseString")
 	private void JsonArrayTest(){

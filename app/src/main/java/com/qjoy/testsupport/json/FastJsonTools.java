@@ -1,5 +1,7 @@
 package com.qjoy.testsupport.json;
 
+import android.annotation.SuppressLint;
+
 import com.alibaba.fastjson.JSON;
 
 import java.util.List;
@@ -8,6 +10,7 @@ import java.util.List;
  * Created by guxiuzhong on 2015/5/12.
  * 开源项目FastJson json解析和生成的工具类
  */
+@SuppressLint("QjoyJavaFastJson")
 public class FastJsonTools {
 
     /**

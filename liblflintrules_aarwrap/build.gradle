@@ -61,7 +61,7 @@ project.afterEvaluate {
  */
 // 提交到仓库中的版本号
 
-version = "1.0.3"
+version = "1.0.4"
 
 def siteUrl = 'current null' // 项目的主页，换成自己的
 def gitUrl = 'current null' // Git仓库的url

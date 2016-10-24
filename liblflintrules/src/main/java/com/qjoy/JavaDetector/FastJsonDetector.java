@@ -62,6 +62,11 @@ public class FastJsonDetector extends Detector implements Detector.JavaScanner {
 	 */
 	private static final String INTERFACE_SERIALIZABLE = "Serializable";
 	private static final String INTERFACE_PARCELABLE = "Parcelable";
+
+
+	private static final String FASTJSONORG_NAME = "JSON";
+
+
 	/**
 	 * 报错信息
 	 */
@@ -70,12 +75,12 @@ public class FastJsonDetector extends Detector implements Detector.JavaScanner {
 	 * 检测的接口名称
 	 */
 	//public static <T> String serialize(T object)
-	private static final String FASTJSONMETHOD_SERIALIZE = "serialize";
+//	private static final String FASTJSONMETHOD_SERIALIZE = "serialize";
 	//public static <T> T deserialize(String json, Class<T> clz)
 	private static final String FASTJSONMETHOD_DESERIALIZE = "deserialize";
 //	//public static <T> List<T> deserializeList(String json, Class<T> clz)
 //	private static final String FASTJSONMETHOD_DESERIALIZELIST = "deserializeList";
-
+	private static final String FASTJSONMETHOD_PARSEOBJECT = "parseObject";
 
 
 	@Override
@@ -92,9 +97,13 @@ public class FastJsonDetector extends Detector implements Detector.JavaScanner {
 					JavaParser.ResolvedMethod method = (JavaParser.ResolvedMethod) resolve;
 					// 方法所在的类校验
 					JavaParser.ResolvedClass containingClass = method.getContainingClass();
-					if (containingClass.getName().contains(FASTJSONTOOLS_NAME)) {
+					if (containingClass.getName().contains(FASTJSONTOOLS_NAME) ||
+							containingClass.getName().contains(FASTJSONORG_NAME)
+							) {
 
-						if (method.getName().equals(FASTJSONMETHOD_DESERIALIZE) ) {
+						if (method.getName().equals(FASTJSONMETHOD_DESERIALIZE) ||
+								method.getName().equals(FASTJSONMETHOD_PARSEOBJECT)
+								) {
 
 							JavaParser.TypeDescriptor classType = method.getReturnType();
 							JavaParser.ResolvedClass resolvedClass = classType.getTypeClass();
@@ -103,15 +112,16 @@ public class FastJsonDetector extends Detector implements Detector.JavaScanner {
 
 							return true;
 						}
-						else if (method.getName().equals(FASTJSONMETHOD_SERIALIZE) ){
-
-							JavaParser.TypeDescriptor classType = method.getArgumentType(0);
-							JavaParser.ResolvedClass resolvedClass = classType.getTypeClass();
-
-							recursiveSupperClass(resolvedClass, node);
-
-							return true;
-						}
+//						else if (method.getName().equals(FASTJSONMETHOD_SERIALIZE)
+//								){
+//
+//							JavaParser.TypeDescriptor classType = method.getArgumentType(0);
+//							JavaParser.ResolvedClass resolvedClass = classType.getTypeClass();
+//
+//							recursiveSupperClass(resolvedClass, node);
+//
+//							return true;
+//						}
 					}
 				}
 				return super.visitMethodInvocation(node);
