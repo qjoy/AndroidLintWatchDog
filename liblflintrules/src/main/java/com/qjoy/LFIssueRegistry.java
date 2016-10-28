@@ -2,7 +2,11 @@ package com.qjoy;
 
 import com.android.tools.lint.detector.api.Issue;
 import com.qjoy.BinaryResource.ImageFileSizeDetector;
+import com.qjoy.ClassDetector.LoggerUsageDetector;
+import com.qjoy.JavaDetector.BaseActivityDetector;
+import com.qjoy.JavaDetector.ChineseStringDetector;
 import com.qjoy.JavaDetector.FastJsonDetector;
+import com.qjoy.XmlDetector.ViewIdNameDetector;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,10 +23,10 @@ public class LFIssueRegistry extends com.android.tools.lint.client.api.IssueRegi
 		System.out.println("###### LFIssueRegistry lint rules works ######");
 		return Arrays.asList(
 				FastJsonDetector.ISSUE
-//				, ViewIdNameDetector.ISSUE
-//				, ChineseStringDetector.ISSUE
-//				, LoggerUsageDetector.ISSUE
-//				, BaseActivityDetector.ISSUE
+				, ViewIdNameDetector.ISSUE
+				, ChineseStringDetector.ISSUE
+				, LoggerUsageDetector.ISSUE
+				, BaseActivityDetector.ISSUE
 				, ImageFileSizeDetector.ISSUE
 		);
 	}
