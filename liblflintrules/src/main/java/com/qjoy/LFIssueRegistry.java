@@ -1,6 +1,7 @@
 package com.qjoy;
 
 import com.android.tools.lint.detector.api.Issue;
+import com.qjoy.BinaryResource.ImageFileSizeDetector;
 import com.qjoy.JavaDetector.FastJsonDetector;
 
 import java.util.Arrays;
@@ -17,12 +18,12 @@ public class LFIssueRegistry extends com.android.tools.lint.client.api.IssueRegi
 	public List<Issue> getIssues() {
 		System.out.println("###### LFIssueRegistry lint rules works ######");
 		return Arrays.asList(
-//				  ViewIdNameDetector.ISSUE
+				FastJsonDetector.ISSUE
+//				, ViewIdNameDetector.ISSUE
 //				, ChineseStringDetector.ISSUE
 //				, LoggerUsageDetector.ISSUE
 //				, BaseActivityDetector.ISSUE
-				FastJsonDetector.ISSUE
-//				, ImageFileSizeDetector.ISSUE
+				, ImageFileSizeDetector.ISSUE
 		);
 	}
 }
